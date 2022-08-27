@@ -31,6 +31,16 @@ eg	-> git add . - . means all files.
 		==> staging area - files which are eligible to push/commit.
 
 
+-+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+-
+
+	==> git rm --cached <file> / git restore --stagged <file>	
+		=> to unstagged the stagged file.
+
+rm => to remove the files to stagging to unstagging.
+restore => to remove the files to stagging to unstagging / discard changes in working directory
+
+
+
 3..commit 
 --------------------------------------------
 -> in the project folder
@@ -58,7 +68,8 @@ eg	-> git add . - . means all files.
 	-> git remote add origin <url>
 	
 		==> is is used to add the cloud repo's url to the local repo.
-  
+		==> this commands will be used to add url only first time when 
+		    we are initializing our repo.  
 
 
  
@@ -69,4 +80,7 @@ eg	-> git add . - . means all files.
 	-> git push -u origin main
 	
 		==> it will push the code to the cloud repository.
- 
+
+
+==> git status -- to check which files are changed.
+
