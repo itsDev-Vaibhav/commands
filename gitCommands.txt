@@ -83,4 +83,7 @@ restore => to remove the files to stagging to unstagging / discard changes in wo
 
 
 ==> git status -- to check which files are changed.
+==> git log -- to check commit history in the sorce code.
+==> git clone -- to download the existing repository from remote location.
+==> git pull -- to get latest change from the remote repository. 
 
