@@ -1,0 +1,72 @@
+		to login to git
+--------------------------------------------
+
+git config --global user.email <email>
+
+git config --global user.name <name>
+
+==> to set your username and email globally.
+
+
+
+to store the project source code to git repo is a multi step process
+
+1..to initialize the git repo
+--------------------------------------------
+-> in the project folder
+	
+	-> git init
+
+		==> it will initialize the repository and create a .git folder.
+
+
+2..add files the git repo
+--------------------------------------------
+-> in the project folder
+	
+	-> git add <file>
+eg	-> git add . - . means all files.	
+	
+		==> is is used to add files to staging area.
+		==> staging area - files which are eligible to push/commit.
+
+
+3..commit 
+--------------------------------------------
+-> in the project folder
+	
+	-> git commit -m <message>
+	
+		==> is is used to add all the files to local repo.
+ 
+4..branch 
+--------------------------------------------
+-> to specifying the branch name
+	
+	-> git branch -M <branch name>
+	
+		==> is is used to specify the branch name in repository.
+  
+ 
+
+
+
+4..create connection to cloud repo
+--------------------------------------------
+-> to create connection b/w cloud repository and local repository
+	
+	-> git remote add origin <url>
+	
+		==> is is used to add the cloud repo's url to the local repo.
+  
+
+
+ 
+4..push 
+--------------------------------------------
+-> to push the code from local repo to cloud repo.
+	
+	-> git push -u origin main
+	
+		==> it will push the code to the cloud repository.
+ 
