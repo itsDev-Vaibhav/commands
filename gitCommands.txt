@@ -1,3 +1,15 @@
+			GITHUB NOTES
+-+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+
+-+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+
+===>.......===>....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>....===>.......===>..
+
+
+-+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+
++ Whenever you start working on any functionality it's better to create  +
++ a child branch for that branch so that previous code will not break.	 +
+-+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+
+
+
 		to login to git
 --------------------------------------------
 
@@ -83,7 +95,13 @@ restore => to remove the files to stagging to unstagging / discard changes in wo
 
 
 ==> git status -- to check which files are changed.
-==> git log -- to check commit history in the sorce code.
+==> git log -- to check commit history in the source code.
 ==> git clone -- to download the existing repository from remote location.
 ==> git pull -- to get latest change from the remote repository. 
+
+
+
+
+4.. git stash command
+--------------------------------------------
 
