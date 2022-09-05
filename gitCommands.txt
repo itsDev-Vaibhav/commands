@@ -97,7 +97,11 @@ restore => to remove the files to stagging to unstagging / discard changes in wo
 ==> git status -- to check which files are changed.
 ==> git log -- to check commit history in the source code.
 ==> git clone -- to download the existing repository from remote location.
+
 ==> git pull -- to get latest change from the remote repository. 
+-------------------------------------------------------------------
+-> it is a very dangerous command in git.
+-> Always you need to pull the repository before starting your work. 
 
 
 
