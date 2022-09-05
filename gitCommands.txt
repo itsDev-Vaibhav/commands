@@ -19,6 +19,10 @@ git config --global user.name <name>
 
 ==> to set your username and email globally.
 
+to change the editor in your git.
+
+git config --global core.editor "nano"
+
 
 
 to store the project source code to git repo is a multi step process
