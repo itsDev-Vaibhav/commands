@@ -112,4 +112,4 @@ restore => to remove the files to stagging to unstagging / discard changes in wo
 
 4.. git stash command
 --------------------------------------------
-
+git stash command is basically used to store your changes into a temporary store.
