@@ -136,5 +136,5 @@ git stash apply
 	
 git stash list => provide the list of previous stashed code with index.
 		  if we want to get restore our code from any specific stash index then
-		  git stash apply {stash index}
+		  ===>>> git stash apply {stash index}
 		  
