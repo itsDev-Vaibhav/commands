@@ -1,1 +1,0 @@
-chmod command is used to perform file permission.
