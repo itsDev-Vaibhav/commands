@@ -1,1 +1,4 @@
 'chmod' commands is for file permissions.
+
+
+git config --global core.editor "nano"
