@@ -113,3 +113,7 @@ restore => to remove the files to stagging to unstagging / discard changes in wo
 4.. git stash command
 --------------------------------------------
 
+use case : once you are doing changes but in mid of your task you got an email to fix 
+	   a high priority bug.
+	   and you want to work on it. but where you will store these changes.
+
