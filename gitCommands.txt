@@ -110,11 +110,17 @@ restore => to remove the files to stagging to unstagging / discard changes in wo
 
 
 
-4.. git stash command
+4.. git stash / stash apply command
 --------------------------------------------
+
+git stash
+==================
 
 git stash command is basically used to store your changes into a temporary store.
 
+// my side..
+==> After doing some changes, to make working tree clean by storing our changes to temporary storage we will use 'git stash' option.
+ 
 use case : once you are doing changes but in mid of your task you got an email to fix 
 	   a high priority bug and you want to work on it. but where you will store
 	   these changes. so use git 'stash' commands.
@@ -122,4 +128,13 @@ use case : once you are doing changes but in mid of your task you got an email t
 	   
 1.. before start working on high prioprity task we have to perform git stash option.	   
 
+git stash apply
+==================
 
+==> after completing your high priority work now you want your stashed code back to work.
+	we are going to use 'git stash apply' option.
+	
+git stash list => provide the list of previous stashed code with index.
+		  if we want to get restore our code from any specific stash index then
+		  git stash apply {stash index}
+		  
