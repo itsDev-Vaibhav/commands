@@ -116,7 +116,10 @@ restore => to remove the files to stagging to unstagging / discard changes in wo
 git stash command is basically used to store your changes into a temporary store.
 
 use case : once you are doing changes but in mid of your task you got an email to fix 
-	   a high priority bug.
-	   and you want to work on it. but where you will store these changes. so use git 'stash' commands.
+	   a high priority bug and you want to work on it. but where you will store
+	   these changes. so use git 'stash' commands.
+	   
+	   
+1.. before start working on high prioprity task we have to perform git stash option.	   
 
 
