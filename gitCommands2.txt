@@ -31,4 +31,21 @@ git clone <repo> - by default main/master
 git clone -b <branch name> repo
 
 
+==> we can merge changes from one branch to another branch using 'pull request'.
 
+
+
+how to switch branch---
+=================================================
+==> using gitbash we can switch from one branch to another branch using 'checkout' commands.
+==> no need to clone the every branch.
+
+
+==> git checkout develop
+
+
+
+what is .gitignore file
+=================================================
+
+it is a text file which is use to configure files/ folder to ignore from git operations.
