@@ -1,0 +1,143 @@
+
+Working with User Accounts
+==========================
+
+=> Linux is multi user based operating systems
+
+=> Within one Linux machine we can create multiple user accounts
+
+=> Multiple users can access single linux machine and can perform multi-tasking
+
+-> When we launch EC2 instance with Ubuntu OS, we got by default 'ubuntu' user account
+
+Create a user
++++++++++++++
+$ sudo adduser <uname>
+
+=> After creating user account we can verify useraccount details using 'id' command
+
+$ id <uname>
+
+=> 'id' command will display user account information
+
+=> Check the files available in home directory 
+
+$ ls -l
+
+	(We can see ubuntu folder and newly created user folder)
+	(That means we have 2 user accounts in our machine)
+
+After creating a new user and setting a password to it, you can log in from the terminal
+
+	$ su - <uname>
+
+
+Delete a user
+=============
+$ sudo userdel <uname>
+
+If you try that command, you will notice that the user directory has not been deleted and you need to delete it by yourself.
+
+You can use this automated command to do everything for you:
+
+$ sudo deluser --remove-home <uname>
+
+
+User groups
+============
+-> A group is a collection of users. 
+
+-> The primary purpose of the groups is to define a set of privileges like read, write, or execute permission for a given resource that can be shared among the users within the group.
+
+
+==> You can see all of the groups you have by opening the following file:
+-------------------------------------------------------------------------
+
+$ cat /etc/group
+
+
+Create a group
+----------------
+$ sudo groupadd <groupname>
+
+Add user to a group
+--------------------
+$ sudo usermod -aG <group-name> <username>
+
+-> verify user groups using command -> $ id username
+
+Delete user from a group
+-------------------------
+$ sudo gpasswd -d <username> <groupname>
+
+Delete a group
+--------------
+$ sudo groupdel <groupname>
+
+
+Working with 'find' and 'locate' commands
+------------------------------------------
+
+locate command
+++++++++++++++++
+The locate Command find will search for data in local db
+
+$ sudo apt install mlocate
+
+$ locate apache
+
+$ locate -c apache
+
+$ locate -c *.txt
+
+$ locate -S (to see locate database)
+
+Note: when we create new files it will take some time to update those files in mlocate db
+
+find command
++++++++++++++
+=> find command will search for the files in entire linux file system.
+=> find command providing advanced searching technique
+=> Using find command, we can search for the files based on name and type also.
+
+2. Find Files Under Home Directory
+# find /home -name f1.txt
+
+7. Find Files With 777 Permissions
+# find . -type f -perm 0777 -print
+
+19. Find all Empty Files
+# find /home -type f -empty
+
+20. Find all Empty Directories
+# find /home -type d -empty
+
+Note: As find command is scanning entire file system, it will take more time to give search results.
+
+----------------------------------------------------------------------------------------------
+-> 'man' command is like a help command. It is used to understand command syntax and options.
+
+		$ man cat
+-----------------------------------------------------------------------------------------------
+
+-> To see ip address we will use 'ifconfig' command
+
+	$ ifconfig
+
+Note : ifconfig is not installed then execute below command
+
+	$ sudo apt install net-tools
+
+-> 'ping' command is used to check connectivity
+
+	$ ping <ip>
+
+->  'curl' command is used to get response from the server
+
+	$ curl <url>
+
+-> 'wget' command is used to download resources from internet
+
+	$ wget <url>
+
+-----------------------------------------------------------------------------------------------
