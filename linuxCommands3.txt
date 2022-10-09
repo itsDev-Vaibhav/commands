@@ -1,0 +1,77 @@
+> When application running, it will generate log messages and it will store log messages at bottom of the file.
+
+
+-> To see log messages of the application we will use 'tail' command
+
+
+cp command
+---------
+-> To copy the data from one file to another file
+
+	$ cp one.txt two.txt  ( or ) $ cat one.txt > two.txt
+
+	$ cp f1.txt f2.txt f3.txt  (invalid syntax)
+
+-> We can't copy morethan one file data using 'cp' command. To copy multiple files data we should go for 'cat' command
+
+	$ cat f1.txt f2.txt > f3.txt
+
+Rename the files or directories
+--------------------------------
+-> To rename files we will use 'mv' command
+
+	$ mv f1.txt f1111.txt
+
+	$ mv  dirname dirnewname
+
+Note: We can use 'mv' command for renaming and moving files
+
+Comparing files
+---------------
+-> To compare files we can use below commands
+
+$ cmp f1.txt f2.txt
+$ diff f1.txt f2.txt
+
+-> cmp command will display only first difference in given 2 two files
+-> diff command will display all the differences in the content
+
+grep command
+------------
+-> 'grep' stands for global regular expression print.
+
+-> 'grep' command will process the text line by line and prints any lines which matches given pattern.
+
+	Ex: I want to print all lines which contains 'NullPointerException'
+
+	$ grep -i 'NullPointerException' *
+
+Note: We can install grep using below command
+
+	$ sudo yum install grep
+
+//search for the lines which contains given word in the given filename
+$ grep 'word' filename
+
+//search for the lines which are having exception keyword in server.log file
+$ grep -i 'exception' server.log 
+
+//search for the given text in present directory and in sub-directories also
+$ grep -R 'exception'
+
+=> We can pass several options for 'grep' command
+
+-c : This prints only the count of files that matches give pattern
+
+-i : ignore case-sentitivty
+
+-n : Display the matched lines and their line numbers
+
+-l : Displays only file names that matches the pattern
+
+-h : Displays matched lines without file names
+
+-R : Displays matched lines with file names
+
+--------------------------------------------------------------------------------------------
+

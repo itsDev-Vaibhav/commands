@@ -1,0 +1,51 @@
+			GITHUB NOTES
+-+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+
+-+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+
+===>.......===>....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>....===>.......===>..
+
+
+-+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+
++ Whenever you start working on any functionality it's better to create  +
++ a child branch for that branch so that existing code will not break.	 +
+-+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+--+-+-+-+-+-+-+
+
+git branches
+-----------------
+==> any number of branches we can maintain.
+==> easy add new feature to the project without changing previous code. 
+
+master/main
+develop
+feature -- R & D team
+qa
+uat
+prod/release  - support production team
+
+
+how to clone branch---
+=================================================
+
+git clone <repo> - by default main/master
+
+// to clone a specific branch
+git clone -b <branch name> repo
+
+
+==> we can merge changes from one branch to another branch using 'pull request'.
+
+
+
+how to switch branch---
+=================================================
+==> using gitbash we can switch from one branch to another branch using 'checkout' commands.
+==> no need to clone the every branch.
+
+
+==> git checkout develop
+
+
+
+what is .gitignore file
+=================================================
+
+it is a text file which is use to configure files/ folder to ignore from git operations.
