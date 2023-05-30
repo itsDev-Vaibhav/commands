@@ -1,0 +1,23 @@
+---
+version: "3.8"
+services:
+  application:
+    image: sb_rest_api
+    networks:
+      springboot-db-net:
+    ports:
+      - "9191:9191"
+    depends_on:
+      - mysqldb
+  mysqldb:
+    image: mysql:8.0.33
+    networks: 
+      springboot-db-net:
+    environment:
+      - MYSQL_ROOT_PASSWORD=root@1234
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+      - MYSQL_RANDOM_ROOT_PASSWORD=1
+      - MYSQL_DATABASE:online_plateform
+networks:
+  springboot-db-net:
+...

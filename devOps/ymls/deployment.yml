@@ -1,0 +1,40 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: maven-app-deployment
+spec:
+  replicas: 2
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: maven-web-app
+  template:
+    metadata:
+      name: maven-app-pod
+      label:
+        app: maven-web-app
+    spec:
+      containers:
+        - name: maven-app-container
+          image: vaibhavjdev/maven-web-app
+          ports:
+            - containerPort: 8080
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: maven-app-svc
+#  namespace: vaibhav-k8s
+spec:
+  type: NodePort
+#  type: ClusterIP
+  selector:
+    app: maven-web-app
+  ports:
+    - port: 80
+      targetPort: 8080
+      nodePort: 30005
+...

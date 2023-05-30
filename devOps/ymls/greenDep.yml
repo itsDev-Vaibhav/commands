@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: maven-app-deployment-green
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: maven-web-app
+      version: v2
+  template:
+    metadata:
+      name: maven-app-pod
+      labels:
+        app: maven-web-app
+        version: v2
+    spec:
+      containers:
+        - name: maven-app-container
+          image: vaibhavjdev/maven-web-app
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+...
